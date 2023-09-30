@@ -6,7 +6,7 @@ function contact() {
 
   emailjs
     .sendForm(
-      "service_1y1zvcu",
+      "service_dyfarxk",
       "template_8vorhva",
       event.target,
       "FH-24DcZWvN7TmYng"
@@ -17,7 +17,7 @@ function contact() {
     })
     .catch(() => {
       alert(
-        "The email service is temporarly unavailable. Please contact me directly at alexfarkasbusiness@gmail.com"
+        "The email service is temporarly unavailable. Please contact me directly at maniamatei@gmail.com"
       );
     });
 }

@@ -273,7 +273,7 @@ button {
 }
 
 .e-nav__link:after {
-  content: "Home Page";
+  content: "Acasa";
 }
 
 .e-nav__link:hover:before {

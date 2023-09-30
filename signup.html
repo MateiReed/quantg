@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylelogin.css" />
+    <script src="./index.js"></script>
+    <script
+    src="https://kit.fontawesome.com/492fd5106e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("FH-24DcZWvN7TmYng");
+    })();
+  </script>
+
+
+<img src="./assets/circle.svg" class="shape shape--0" />
+      <img src="./assets/semi_circle.svg" class="shape shape--2" />
+      <img src="./assets/semi_circle.svg" class="shape shape--3" />
+      <!-- <img src="./assets/squiggly.svg" class="shape shape--4" /> -->
+      <img src="./assets/squiggly.svg" class="shape shape--5" />
+      <img src="./assets/circle.svg" class="shape shape--6" />
+      <img src="./assets/triangle.svg" class="shape shape--7" />
+      <img src="./assets/circle.svg" class="shape shape--8" />
+
+
+    <title>Login Page</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      input[type=text], input[type=Email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      } 
+      form {
+        background-color: #ffffff;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px #ccc;
+	}
+
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #2791e7;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #0d5c91;
+      }
+    </style>
+  </head>
+  <body>
+  
+
+    
+    <h2>Create an account</h2>
+    <form>
+      <label for="username"><b>Username:</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label for="password"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <label for="Email"><b>Email:</b></label>
+      <input type="Email" placeholder="Enter Email" name="@" required> 
+	  <button type="submit"> <a
+        href="login.html"></a> Create account </button>
+    </form>
+  </section>
+
+
+  </body>
+</html>

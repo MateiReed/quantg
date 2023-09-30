@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetTheApples</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/me1.png" />
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/492fd5106e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src=""
+    ></script>
+    <script type="text/javascript"> 
+      (function () {
+        emailjs.init("");
+      })();
+    </script>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Romanian Developer">
+  <meta name="keywords" content="Unity, C# , GAME">
+  <meta name="author" content="Matei">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure class="personal-logo--container" onclick="darkTheme()">
+          <!-- <img src="./assets/me1.png" id="personal-logo" /> -->
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="login.html"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Login</a 
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="darkTheme()">
+            <a href="#" class="nav__link--anchor"
+              ><i class="fa-solid fa-adjust fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Quant</h1>
+          <h1 class="title title--secondary">
+            <span class="text--blue">Games Studio</span>
+          </h1>
+          <p class="header__para">
+            Un mic studio de dezvoltare de jocuri pentru PC-uri este o echipă dedicată de
+            <span class="text--blue text--bold"> programatori </span>
+             si artiști care se concentrează pentru cele mai bune rezultate posibile.
+            Mai multe despre noi
+            <span
+              class="text--blue text--bold cursor--pointer"
+              onclick="toggleModal()"
+              >aici</span>.
+            
+          </p>
+          <div class="social__links">
+            <a
+              href="https://www.youtube.com/channel/UCI0RfCBhWIy1AuVV_S7P1yg"
+              class="social__link click"
+              target="_blank"
+            >
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a
+              href="https://discord.gg/5KgaHFVJ2M"
+              class="social__link click"
+              target="_blank"
+            >
+            <i class="fa-brands fa-discord" style="color: #434242;"></i>
+            </a>
+            <a onclick="alertNotification()" class="social__link click cursor__hover">
+              <i class="fa-solid fa-file-lines"></i>
+            </a>
+          </div>
+        </div>
+        <img src="./assets/me1.png" class="header__me--photo" />
+      </header>
+      <!-- <button class="mail__button click" onclick="toggleModal()"> -->
+        <!-- <a href="#" class="mail__button--link">
+          <i class="fa-solid fa-envelope"></i> -->
+        </a>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Quantum Games
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about text--blue">
+            Beginner Programmers
+          </h4>
+          <div class="mode__para--container">
+            <p class="model__para">
+              Un mic studio de dezvoltare de jocuri este un colectiv creativ și pasionat, dedicat creării 
+              <span class="text--blue text--bold">experiențelor</span>
+              de divertisment interactive. Cu o echipă talentată de
+              <span class="text--blue text--bold">programatori</span>, 
+              <span class="text--blue text--bold">artiști </span> si
+              <span class="text--blue text--bold">game designeri</span>
+              <!-- <span class="text--blue text--bold">distractivă</span> -->
+              acest studio se axează pe dezvoltarea de jocuri captivante/ Cu o cultură a inovației și a colaborării strânse, studio-ul se concentrează pe crearea de jocuri care aduc
+              <span class="text--blue text--bold">bucurie</span>
+              și provocări jucătorilor din întreaga lume. De la concept la lansarea finală, acești dezvoltatori dedicați lucrează împreună pentru a aduce povestile lor și viziunile lor în lumea jocurilor video.
+             
+            </p>
+          </div>
+          <h3
+            class="modal__languages--title text--blue text--bold link__hover-effect2 link__hover-effect--blue"
+          >
+            Limbaje de progamare cunoscute
+          </h3>
+          <div class="modal__languages">
+            <figure class="modal__language--container">
+              <img src="./assets/HTML35.png" class="modal__language--img" />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language--container">
+              <img src="./assets/CSS.png" class="modal__language--img" />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language--container">
+              <img src="./assets/JS.png" class="modal__language--img" />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language--container">
+              <img src="./assets/HTML5.png" class="modal__language--img" />
+              <span class="language__name">C#</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i
+            class="fa-solid fa-times modal__exit click"
+            onclick="toggleModal()"
+          ></i>
+          <h3 class="modal__title modal__title--contact">Do you have any question?</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            You can send me a message.
+          </h4>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input message__area"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--succes">
+            <p class="overlay--succes__text">
+              Thanks for the message!
+              <br />
+              I'll be in contact with you soon!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/circle.svg" class="shape shape--0" />
+      <img src="./assets/triangle.svg" class="shape shape--1" />
+      <img src="./assets/semi_circle.svg" class="shape shape--2" />
+      <img src="./assets/semi_circle.svg" class="shape shape--3" />
+      <img src="./assets/squiggly.svg" class="shape shape--4" />
+      <img src="./assets/squiggly.svg" class="shape shape--5" />
+      <img src="./assets/circle.svg" class="shape shape--6" />
+      <img src="./assets/triangle.svg" class="shape shape--7" />
+      <img src="./assets/circle.svg" class="shape shape--8" />
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="projects__title">
+            Proiectele <span class="text--blue">Noastre</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project first__project">
+              <div class="project__wrapper">
+                <img src="./assets/logomeniu2.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">GetTheApples</h3>
+                  <h4 class="project__description--sub-title">
+                    C#
+                  </h4>
+                  <p class="project__description--para">
+                    "GetTheApples" este un joc captivant creat în Unity care te plasează în pielea unui jucător cu o misiune captivanta.  <p>~Spor la joaca!~</p>      <br />
+                    
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/Gettheapples/releases"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/Gettheapples/releases"
+                      target="_blank"
+                    > 
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+           
+           
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/nuca.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Flappy Nuts</h3>
+                  <h4 class="project__description--sub-title">UNITY, C#</h4>
+                  <p class="project__description--para">
+                    Game made in 23 minutes and exported in 30 minutes
+                   
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/FlappyNuts/releases/tag/Game"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/FlappyNuts/releases/tag/Game"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+           
+           
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/librarywebsite.png" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    NAGR
+                  </h3>
+                  <h4 class="project__description--sub-title">UNITY, C#</h4>
+                  <p class="project__description--para">
+                    You're an astronaut and trying to dodge the obstacles while you're listeting to music.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/NAGR/releases/tag/Game"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed/NAGR/releases/tag/Game"
+                      target="_blank"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/vanitybuypagewebsite.png"
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Vanity Buy Page</h3>
+                  <h4 class="project__description--sub-title">HTML, CSS</h4>
+                  <p class="project__description--para">
+                    Buy page app that displays available upgrades on related
+                    forum.
+                  </p> -->
+                  <!-- <div class="project__description--links">
+                    <a
+                      class="project__description--link"
+                      href="https://github.com/MateiReed"
+                      target="_blank"
+                    > -->
+                      <!-- <i class="fa-solid fa-link"></i> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure class="footer__logo--container">
+            <a href="#">
+              <img src="./assets/me1.png" class="footer__logo--img" />
+            </a>
+          </figure>
+          <div class="footer__social--list">
+            <a
+              target="_blank"
+              href="https://github.com/MateiReed"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github</a
+            >
+            <a
+              target="_blank"
+              href="https://discord.com/invite/5KgaHFVJ2M"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Discord</a
+            >
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact</a
+            >
+          </div>
+          <div class="footer__copyright">Copyright &copy; 2023 QuantG</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- Project Done :) -->

@@ -62,7 +62,7 @@ section {
   cursor: pointer;
 }
 
-/* .darkTheme footer .container {
+.darkTheme footer .container {
   background-color: #101010;
 }
 
@@ -117,7 +117,7 @@ section {
 a {
   color: #ffffff;
   text-decoration: none;
-} */
+}
 
 li {
   list-style: none;
@@ -183,7 +183,7 @@ nav,
 }
 
 .form__submit {
-  background-color: #0087cd;
+  background-color: #FCE09B;
   border: 0px;
   padding: 16px 32px;
   color: #fff;
@@ -202,7 +202,7 @@ nav,
 
 .form__submit:active {
   background-color: transparent;
-  border: 2px solid #0087cd;
+  border: 2px solid #FCE09B;
   transition: 100ms all linear;
 }
 
@@ -231,7 +231,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border-color: #0087cd;
+  border-color: #FCE09B;
 }
 
 label {
@@ -241,7 +241,7 @@ label {
 
 label::before {
   content: "* ";
-  color: #0087cd;
+  color: #FCE09B;
 }
 
 .container {
@@ -256,7 +256,7 @@ label::before {
 }
 
 .text--blue {
-  color: #0087cd !important;
+  color: #FCE09B !important;
   display: inline-block;
 }
 
@@ -283,7 +283,7 @@ label::before {
 }
 
 .social__link {
-  background-color: #0087cd;
+  background-color: #FCE09B;
   width: 32px;
   height: 32px;
   padding: 6px;
@@ -357,7 +357,7 @@ label::before {
   background-color: #fff;
 }
 .link__hover-effect--blue:after {
-  background-color: #0087cd;
+  background-color: #FCE09B;
   box-shadow: 0px 0px 5px rgba(0, 137, 205, 0.5);
 }
 
@@ -840,8 +840,8 @@ footer .container {
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(
     180deg,
-    rgba(0, 140, 250, 0.5),
-    rgba(0, 60, 115, 0.5)
+    #FCE09B,
+    #ccb885
   );
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
@@ -1133,10 +1133,10 @@ body {
 /* Button styles */
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  padding-left: 6px;
-  padding-right: 6px;
-  font-size: 16px;
+  padding: 6px 12px;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 8px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -1223,4 +1223,10 @@ body {
   color: #28a745;
 }
 
-/* Project Done :) */
+.buton{
+
+color: #fff
+
+}
+
+

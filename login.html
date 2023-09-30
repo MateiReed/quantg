@@ -23,7 +23,6 @@
 
 
 <img src="./assets/circle.svg" class="shape shape--0" />
-      <!-- <img src="./assets/triangle.svg" class="shape shape--1" /> -->
       <img src="./assets/semi_circle.svg" class="shape shape--2" />
       <img src="./assets/semi_circle.svg" class="shape shape--3" />
       <img src="./assets/squiggly.svg" class="shape shape--4" />
@@ -62,7 +61,7 @@
         box-sizing: border-box;
       }
       button {
-        background-color: #2791e7;
+        background-color: #FCE09B;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -70,9 +69,10 @@
         border-radius: 4px;
         cursor: pointer;
         width: 100%;
+        margin: auto;
       }
       button:hover {
-        background-color: #0d5c91;
+        background-color: #a58e54;
       }
     </style>
   </head>
@@ -88,20 +88,15 @@
       <input type="password" placeholder="Enter Password" name="password" required>
       <button type="submit"> <a
         href="index.html"></a> Login </button>
+      <h1>  <br /> </h1>
+    
+   <button id="myButton" class="float-left submit-button" >Sign Up</button>
+   <script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "./signup.html";
+    };
+</script>
     </form>
   </section>
-
-  <button id="signup-btn"><a
-    href="signup.html"> Don't have an account?</a> </button>
-
-    <!-- <li class="nav__link">
-      <a
-        href="signup.html"
-        class="nav__link--anchor link__hover-effect link__hover-effect--black"
-        >Sign UP</a 
-      >
-      </li> -->
-
-
   </body>
 </html>

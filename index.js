@@ -22,10 +22,7 @@ function contact() {
     });
 }
 
-var c = darkTheme(); 
-{
-  darkTheme(c);
-}
+
 
 function toggleModal() {
   document.body.classList.toggle("modal--open");

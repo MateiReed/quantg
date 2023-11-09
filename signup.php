@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylelogin.css" />
+    <script src="./index.js"></script>
+    <script
+    src="https://kit.fontawesome.com/492fd5106e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("FH-24DcZWvN7TmYng");
+    })();
+  </script>
+
+
+<img src="./assets/circle.svg" class="shape shape--0" />
+      <img src="./assets/semi_circle.svg" class="shape shape--2" />
+      <img src="./assets/semi_circle.svg" class="shape shape--3" />
+      <img src="./assets/squiggly.svg" class="shape shape--5" />
+      <img src="./assets/circle.svg" class="shape shape--6" />
+      <img src="./assets/triangle.svg" class="shape shape--7" />
+      <img src="./assets/circle.svg" class="shape shape--8" />
+
+
+    <title>Sign Up Page</title>
+    <style>
+      body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        background-color: #ffffff0e;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #a7a7a7;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px #ccc;
+      }
+      input[type=text], input[type=password], input[type=email] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #ffffff00;
+        text: black;
+      }
+      button {
+        background-color: #FCE09B;
+        color: rgb(0, 0, 0);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin: auto;
+      }
+      button:hover {
+        background-color: #a58e54;
+      }
+    </style>
+    </head>
+  <body>
+    <nav>
+      <li class="nav__link" onclick="">
+        <a
+        href="./index.html"
+          class="nav__link--anchor link__hover-effect link__hover-effect--black"
+          >Home</a
+        >
+      </li>
+      <figure class="personal-logo--container" onclick="darkTheme()">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+        <li class="nav__link click" onclick="darkTheme()">
+          <a href="#" class="nav__link--anchor"
+            ><i class="fa-solid fa-adjust fa-circle-half-stroke"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="h2">
+
+      <h2>Create an account</h2></div>
+      <br />
+
+   
+    <form>
+      <label for="username"><b>Username:</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label for="password"><b>Password:</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <label for="Email"><b>Email:</b></label>
+      <input type="Email" placeholder="Enter Email" name="@" required> 
+      <br />
+	  <button type="submit"> <a
+        href="./index.html"></a> Create account </button>
+    </form>
+  </section>
+
+
+  </body>
+</html>

@@ -308,19 +308,35 @@ label::before {
 }
 
 .social__linkmodal {
-  width: 42px;
-  height: 60px;
-  padding: 16px;
+  width: 22px;
+  height: 22px;
+  padding: 17px;
   color: #ffffff;
   border-radius: 50%;
   
   /* display: flex;
   align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   font-size: 16px;
 }
 
 .social__linkmodal:not(:last-child) {
+  margin-right: 8px;
+}
+
+.social__linkmodaldiscord {
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  /* align-items: center; */ 
+  /* justify-content: center; */
+  font-size: 16px;
+}
+s
+.social__linkmodaldiscord:not(:last-child) {
   margin-right: 8px;
 }
 

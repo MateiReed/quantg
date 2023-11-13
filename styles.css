@@ -49,6 +49,7 @@ p {
 .fa-adjust,
 .projects__title {
   transition: 300ms color ease-in-out !important;
+  
 }
 
 section {
@@ -305,19 +306,19 @@ label::before {
   
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .social__linkmodal {
   width: 22px;
   height: 22px;
-  padding: 17px;
+  padding: 7.5px;
   color: #ffffff;
   border-radius: 50%;
-  
-  /* display: flex;
-  align-items: center; */
-  /* justify-content: center; */
-  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
 .social__linkmodal:not(:last-child) {
@@ -326,14 +327,15 @@ label::before {
 
 .social__linkmodaldiscord {
   width: 22px;
+  /* background-color: #ffffffe1; */
   height: 22px;
-  padding: 4px;
+  padding: 20px;
   color: #ffffff;
   border-radius: 50%;
   display: flex;
-  /* align-items: center; */ 
-  /* justify-content: center; */
-  font-size: 16px;
+  align-items: center; 
+  justify-content: center;
+  font-size: 18px;
 }
 s
 .social__linkmodaldiscord:not(:last-child) {
@@ -398,8 +400,8 @@ s
   background-color: #fff;
 }
 .link__hover-effect--blue:after {
-  background-color: #FCE09B;
-  box-shadow: 0px 0px 5px rgba(0, 137, 205, 0.5);
+  background-color: #fdc944;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 
 /* KEYFRAMES */
@@ -531,6 +533,8 @@ s
 .imaginemodal--container {
   width: 100px;
   height: 100px;
+  align-items: center; 
+  justify-content: center;
 }
 
 #imaginemodal {
@@ -539,11 +543,15 @@ s
   height: 100px;
   transition: 300ms ease-in-out all;
   border-radius: 60px;
+  align-items: center; 
+  justify-content: center;
 }
 
 #imaginemodal:hover {
   transform: scale(0.9);
   cursor: pointer;
+  align-items: center; 
+  justify-content: center;
 }
 nav {
   display: flex;

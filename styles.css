@@ -313,7 +313,7 @@ label::before {
 .social__linkmodal {
   width: 22px;
   height: 22px;
-  padding: 7.5px;
+  padding: 10px;
   color: #ffffff;
   border-radius: 50%;
   align-items: center;
@@ -327,9 +327,8 @@ label::before {
 
 .social__linkmodaldiscord {
   width: 22px;
-  /* background-color: #ffffffe1; */
   height: 22px;
-  padding: 20px;
+  padding: 30px;
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -394,7 +393,7 @@ s
 }
 
 .link__hover-effect--black:after {
-  background-color: #000;
+  background-color: #7D7C7C;
 }
 .link__hover-effect--white:after {
   background-color: #fff;
@@ -576,10 +575,56 @@ nav {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  color: #242424;
+  color: #272727;
 }
 
+.textmodal{
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.colordiscord{
+color: #f7e8c4
+}
+
+.colorinstagram{
+  color:  #f7e8c4
+  }
+
 .nav__link {
+  margin: 0 12px;
+}
+.navm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.nav__link--anchorm:first-child {
+  cursor: pointer;
+}
+
+.nav__linkm--list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__linkm a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__linkmo {
   margin: 0 12px;
 }
 
@@ -687,6 +732,7 @@ nav {
   font-size: 16px;
   max-width: 370px;
 }
+
 
 .modal__language--container {
   transition: 300ms all ease;

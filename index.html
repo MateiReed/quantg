@@ -16,11 +16,7 @@
       type="text/javascript"
       src=""
     ></script>
-    <script type="text/javascript"> 
-      (function () {
-        emailjs.init("c8dJy2ZoQcJ_aqQ3g");
-      })();
-    </script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <meta charset="UTF-8">
   <meta name="description" content="Romanian Developers">
@@ -29,6 +25,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure class="personal-logo--container" onclick="darkTheme()">
@@ -286,7 +286,7 @@
            
            
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img src="./assets/nuca.png" class="project__img" />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
@@ -318,7 +318,7 @@
            
            
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img src="./assets/minimartian.png" class="project__img" />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
@@ -349,7 +349,7 @@
               </div>
             </li>
             <li class="project">
-              <div class="project__wrapper">
+              <div class="project__wrapper" data-aos="fade-up">
                 <img
                   src="./assets/ok.jpg"
                   class="project__img"
@@ -379,12 +379,16 @@
     </section>
     <footer>
       <div class="container">
-        <div class="row footer__row">
+        <div class="row footer__row" data-aos="zoom-in-down">
           <figure class="footer__logo--container">
-            <a href="#">
+           
               <img src="./assets/me1.png" class="footer__logo--img" />
-            </a>
+ 
           </figure>
+          <span class="footer__logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
           <div class="footer__social--list">
             <a
               target="_blank"

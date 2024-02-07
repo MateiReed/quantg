@@ -96,12 +96,12 @@ p {
 .nav__link--anchor,
 .fa-adjust,
 .projects__title {
-  transition: 300ms color ease-in-out !important;
+  transition: 700ms color ease-in-out !important;
   
 }
 
 section {
-  transition: 300ms background-color ease-in-out !important;
+  transition: 700ms background-color ease-in-out !important;
 }
 
 .cursor__hover:hover {

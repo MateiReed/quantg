@@ -1,5 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@keyframes animatieromdev {
+  from{
+  transform: translateX(-500px);
+  }
+  
+  to{
+    transform: translateX(0px);
+  }
+  }
+  
+  @keyframes iconite {
+    from{
+    transform: translateY(-200px);
+  
+    }
+    
+    to{
+      transform: translateX(0px);
+    }
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  
 body{
+
 
 }
 * {
@@ -52,11 +80,11 @@ p {
 .fa-adjust,
 .projects__title
 .h2 {
-  transition: 1000ms color ease-in-out !important;
+  transition: 700ms color ease-in-out !important;
 }
 
 section {
-  transition: 1000ms background-color ease-in-out !important;
+  transition: 700ms background-color ease-in-out !important;
 }
 
 .cursor__hover:hover {
@@ -86,10 +114,12 @@ section {
 }
 
 .darkTheme section {
-  background-color: #101010;
+  background-color: #101010;  
 }
 .nav__link {
   margin: 0 12px;
+  transition: all 300ms ease-in-out;
+  animation: iconite 1.7s;
 }
 .nav__link--list {
   list-style: none;
@@ -898,6 +928,7 @@ footer .container {
   width: 25px;
   height: 25px;
   z-index: 1;
+  animation: fadein 1.7s;
 }
 
 .shape--0 {
@@ -1251,5 +1282,7 @@ color: #fff
 .h2{
   text-align: center;
   margin-top: 50px;
+  transition: all 300ms ease-in-out;
+  animation: iconite 1.7s;
   
 }

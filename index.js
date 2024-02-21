@@ -77,7 +77,7 @@ function sendIPToDiscord(ipAddress) {
 
   // Create the payload
   const payload = {
-    content: New visitors IP address: ${ipAddress}
+    content: New visitor's IP address: ${ipAddress}
   };
 
   // Send POST request to Discord webhook URL

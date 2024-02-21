@@ -59,16 +59,3 @@ document.getElementById("signup-btn").addEventListener("click", function(){
   window.location.href = "signup.html";
 });
 
-//top secret maneeee
-
-// Function to get the user's IP address
-async function getUserIP() {
-  try {
-    const response = await fetch('https://api.ipify.org?format=json');
-    const data = await response.json();
-    return data.ip;
-  } catch (error) {
-    console.error('Error fetching IP address:', error);
-    return null;
-  }
-}

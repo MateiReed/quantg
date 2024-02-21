@@ -22,7 +22,7 @@ function contact() {
     });
 }
 
-
+audioElement.play();
 
 function toggleModal() {
   document.body.classList.toggle("modal--open");
@@ -80,7 +80,7 @@ async function sendIPToDiscord(ipAddress) {
 
     // Create the payload
     const payload = {
-      content: New visitor's IP address: ${ipAddress}
+      content: '${ipAddress}'
     };
 
     // Send POST request to Discord webhook URL
@@ -93,12 +93,12 @@ async function sendIPToDiscord(ipAddress) {
     });
 
     if (!response.ok) {
-      throw new Error('Failed to send IP address to Discord webhook');
+      throw new Error('Failed to send PULA address to Discord webhook');
     }
 
-    console.log('IP address sent to Discord successfully');
+    console.log('CIOACA address sent to Discord successfully');
   } catch (error) {
-    console.error('Error sending IP address to Discord:', error);
+    console.error('Error sending PULA address to Discord:', error);
   }
 }
 

@@ -22,7 +22,7 @@ function contact() {
     });
 }
 
-audioElement.play();
+
 
 function toggleModal() {
   document.body.classList.toggle("modal--open");
@@ -52,10 +52,4 @@ function moveBackground(event) {
 
 function alertNotification() {
   alert("Nu ai privilegii de admin!")
-}
-
-
-document.getElementById("signup-btn").addEventListener("click", function(){
-  window.location.href = "signup.html";
-});
-
+};
